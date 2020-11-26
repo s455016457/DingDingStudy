@@ -1,0 +1,27 @@
+<view class="main">
+  <view class="slogon">
+    <image src="/image/sw.png" mode="scaleToFill" class="logo"/>
+  </view>
+  <view class="subView">
+    <text class="title">请登陆</text>
+  </view>
+    <view class="form-line" />
+    <view class="form-row">
+      <view class="form-row-label">输入用户</view>
+      <view class="form-row-content">
+        <input class="input" type="text" placeholder="用户名输入框"  onInput="bindUserId"/>
+      </view>
+    </view>
+    <view class="form-line" />
+    <view class="form-row">
+      <view class="form-row-label">输入密码</view>
+      <view class="form-row-content">
+        <input class="input" password type="text" placeholder="密码输入框" onInput="bindPassword" />
+      </view>
+    </view>
+    <view class="form-line" />
+  <view class="subView">
+    <button class="buttons" name="loginButton" onTap="onLogin">登陆</button>
+    <button class="buttons" name="settingButton" onTap="onSetting">设置</button>
+  </view>
+</view>

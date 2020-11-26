@@ -1,0 +1,19 @@
+<import src="/util/lifecycle.axml"/>
+<import src="/util/grid/index.axml"/>
+
+<view class="container">
+    <view class="slogon">
+        <image src="/image/logo.png" mode="scaleToFill" class="logo"/>
+        <view class="info">
+            <text class="desc">我自己的Demo</text>
+        </view>
+    </view>
+    
+    <template is="grid" data="{{...grid}}" />
+
+</view>
+<template
+        key="lifecycle"
+        is="lifecycle"
+        a:if="{{debug}}"
+/>

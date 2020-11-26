@@ -1,0 +1,30 @@
+
+.list{
+  padding: 20rpx;
+}
+
+.list-row{
+  display:flex;
+  flex-wrap:wrap;
+  margin: 0rpx;
+  padding: 10rpx 0;
+  border-bottom: 2px rgb(221, 221, 221) solid;
+}
+
+.list-row:nth-child(odd){
+  background-color: #dfe4ea;
+}
+
+.list-row:nth-child(even){
+  background-color:#f1f2f6;
+}
+
+.list-column{
+  max-width: 250rpx;
+  display: inline-block;
+  font-size: 0.24rem;
+  margin: 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,28 @@
+<import src="/util/lifecycle.axml"/>
+<import src="/util/grid/index.axml"/>
+<import src="/util/items/index.axml"/>
+
+<view class="container" key="container">
+    <view class="slogon">
+        <image src="/image/sw.png" mode="scaleToFill" class="logo"/>
+        <view class="info">
+          <view>
+            <text class="desc">ERP系统</text>
+          </view>
+          <view>
+            <text class="desc">授权与深圳超新四维科技有限公司使用</text>
+          </view>
+          <view>
+            <text class="desc">有效期：2025-12-30  授权在线用户：20</text>
+          </view>
+            
+        </view>
+    </view>
+    <template is="grid" data="{{...arr}}"/>
+</view>
+
+<template
+        key="lifecycle"
+        is="lifecycle"
+        a:if="{{debug}}"
+/>

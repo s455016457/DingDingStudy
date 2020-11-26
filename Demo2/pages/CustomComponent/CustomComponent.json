@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "search-box": "./SearchBox/SearchBox",
+    "approve-panel":"./ApproveBox/ApprovePanel"
+  }
+}

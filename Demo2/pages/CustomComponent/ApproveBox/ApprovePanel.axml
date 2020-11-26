@@ -1,0 +1,21 @@
+<view class="approve-panel">
+  <view class="context">
+    上步审批步骤
+    <view class="form-row">
+      审批步骤：{{PreStepName}}
+    </view>
+    <view class="form-row">
+      <label style="minWidth:360rpx"> 终审人：{{PreApproveByUserName}} </label>    审批时间：{{PreApproveStamp}}
+    </view class="form-row">
+    <view class="form-row">
+      审批备注：<text>{{AproveRemark}}</text>
+    </view>
+    <view class="form-line"/>
+    <textarea placeholder="审批备注" value="{{AproveRemark}}" name="textarea"/>
+  </view>
+  <view class="buttons">
+    <button disabled="{{!HasPassAction}}" form-type="submit" onTap="approve"> 批准 </button>
+    <button disabled="{{!HasNoPassAction}}" form-type="submit" onTap="refuse"> 拒绝 </button>
+    <button form-type="submit" onTap="goToApproveHistory"> 历史审批记录 </button>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+<view class="title">  
+  <text>九九乘法表</text>
+</view>
+
+<view a:for="{{array}}" a:for-item="i" class="row">
+  <view class="key">
+    {{i}}
+  </view>
+
+  <view a:for="{{array}}" a:for-item="j" class="value">
+      {{ i>=j? i*j:""}}
+  </view>
+
+</view>
+<view class="row">
+  <view class="key">
+  </view>
+  <view a:for="{{array}}" a:for-item="j" class="key">
+    {{j}}
+  </view>  
+</view>

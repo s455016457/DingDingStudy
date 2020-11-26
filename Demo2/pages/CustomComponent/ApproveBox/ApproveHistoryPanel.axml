@@ -1,0 +1,43 @@
+
+  <view class="list">
+    <block a:for={{data}}>
+    <view class="list-row" >
+      <view class="list-column">
+        {{index+1}}
+      </view>
+      <view class="list-column">
+        {{item.ApproveId}}
+      </view>
+      <view class="list-column">
+        {{item.StepId}}
+      </view>
+      <view class="list-column">
+        {{item.StepName}}
+      </view>
+      <view class="list-column">
+        {{item.ApproveUserName}}
+      </view>
+      <view class="list-column">
+        {{item.AgentUserName}}
+      </view>
+      <view class="list-column">
+        {{item.ApproveByUserName}}
+      </view>
+      <view class="list-column">
+        {{item.ApproveRequestStamp}}
+      </view>
+      <view class="list-column">
+        {{item.ApproveStamp}}
+      </view>
+      <view class="list-column">
+        {{item.TimeConsuming}}
+      </view>
+      <view class="list-column">
+        {{item.FStatus}}
+      </view>
+      <view class="list-column">
+        {{item.Remark}}
+      </view>
+    </view>
+    </block>
+  </view>

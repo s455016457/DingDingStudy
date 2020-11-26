@@ -1,0 +1,17 @@
+
+  <view>
+    <view class="form-row">
+      <view class="form-row-label">服务主机</view>
+      <view class="form-row-content">
+        <input class="input" type="text" placeholder="192.168.1.254:8081"  value ="{{ServiceHost}}" onBlur="bindServiceHost"/>
+      </view>
+    </view>
+    <view class="form-line" />
+    <view class="subView">
+      <button class="buttons" name="saveButton" onTap="onSave">保存</button>
+      <button class="buttons" name="testButton" onTap="onTest">测试</button>
+    </view>
+    <button type="primary" onTap="onChangeAccount">
+    切换账号
+    </button>
+  </view>

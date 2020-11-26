@@ -1,0 +1,38 @@
+<view>
+  自定义组件
+  <view>
+    查询控件
+    <search-box value="" onAdvanced="onAdvancedFilter" onSearch="onSearch">
+      <view class="advance-filter-context" slot="context">
+      
+        <view class="form-row">
+          <view class="form-row-label">查询条件1</view>
+          <view class="form-row-content">
+            <input class="input" type="text" placeholder="查询条件1" value="{{searchValue1}}" onInput="changeSearchValue1"/>
+          </view>
+        </view>
+        <view class="form-line" />
+      
+        <view class="form-row">
+          <view class="form-row-label">查询条件2</view>
+          <view class="form-row-content">
+            <input class="input" type="text" placeholder="查询条件2" value="{{searchValue2}}"  onInput="changeSearchValue2"/>
+          </view>
+        </view>
+        <view class="form-line" />
+      
+        <view class="form-row">
+          <view class="form-row-label">查询条件3</view>
+          <view class="form-row-content">
+            <input class="input" type="text" placeholder="查询条件3" value="{{searchValue3}}"  onInput="changeSearchValue3"/>
+          </view>
+        </view>
+        <view class="form-line" />
+
+      </view>
+    </search-box>
+
+    <approve-panel ApproveId="97607" StepId="2" UserId="admin">
+    </approve-panel>
+  </view>
+</view>

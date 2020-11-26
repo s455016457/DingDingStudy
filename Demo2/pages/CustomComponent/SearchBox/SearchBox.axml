@@ -1,0 +1,26 @@
+<view>
+  <view class="searchBox">
+    <input class="searchInput" placeholder="{{placeholder}}" value="{{_value}}" onInput="onChange"></input>
+    <button a:if="{{enableSearchButton}}" class="button" onTap="onDoSearch">{{searchButtonText}}</button>
+    <button a:if="{{enableAdvancedbutton}}" class="button" onTap="onClickAdvanced">{{advancedButotnText}}</button>
+    <button a:if="{{_value}}" class="button" onTap="clearSearch">取消</button>
+  </view>
+
+
+  <view class="modal" a:if="{{!hidden}}" key="modal">
+    <view class="modal-mask" animation="{{animMaskData}}"/>
+    <view class="modal-container" animation="{{animContentData}}">
+        <view class="modal-close" onTap="onModalCloseTap">×</view>
+        <view class="modal-content">
+          <slot name="title">
+            <view class="c-title">
+              高级筛选条件
+            </view>            
+          </slot>
+          <slot name="context">
+            <view>这里是查询条件</view>
+          </slot>
+        </view>
+    </view>
+  </view>
+</view>

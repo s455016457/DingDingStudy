@@ -1,0 +1,49 @@
+<view>
+  <view class="page-section-demo">
+      <view class="search-outer">
+        <input
+          class="search-input"
+          placeholder="搜索"
+          value="{{searchValue}}"
+          onConfirm="doneSearch"
+          onInput="handleSearch"
+        />
+        <text a:if="{{searchValue}}" class="search-cancel" onTap="clearSearch">取消</text>
+      </view>
+    </view>
+    <view class="form-line" />
+    <view class="list">
+      <block a:for={{approveList}}>
+        <view class="list-row" onTap="gotToApprove" onLongTap="shwoDetail">
+          <view class="list-column">
+            {{index+1}}
+          </view>
+          <view class="list-column">
+            {{item.ModelName}}
+          </view>
+          <view class="list-column">
+            {{item.DocEntry}}
+          </view>
+          <view class="list-column">
+            {{item.ApproveApplicantName}}
+          </view>
+          <view class="list-column">
+            {{item.RequestDate}}
+          </view>
+          <view class="list-column">
+            {{item.FlowName}}
+          </view>
+          <view class="list-column">
+            {{item.StepName}}
+          </view>
+          <view class="list-column">
+            {{item.FStatus}}
+          </view>
+          <view class="list-column">
+            {{item.Remark}}
+          </view>
+        </view>
+        <!-- <view class="form-line" /> -->
+      </block>
+    </view>
+</view>

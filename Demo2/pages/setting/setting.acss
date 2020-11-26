@@ -1,0 +1,18 @@
+
+.buttons {
+  padding:12rpx;
+  line-height:1.2;
+  height: 60rpx;
+  width:200rpx;
+  font-size: 30rpx;
+  text-align:center;
+  margin: 40rpx 20rpx 20rpx 20rpx;
+}
+
+.subView {
+  width: 100%;
+  align-items: center;
+  display: inline-flex;
+  align-items: center;
+ justify-content: center;
+}

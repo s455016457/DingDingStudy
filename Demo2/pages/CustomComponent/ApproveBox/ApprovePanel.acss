@@ -1,0 +1,28 @@
+.approve-panel{
+  font-size: 26rpx;
+}
+
+.approve-panel .context textarea{
+  font-size: 26rpx;
+}
+.approve-panel .buttons{
+  display: flex;
+  justify-content:space-between;
+}
+
+.approve-panel .buttons{
+  margin-top:20rpx; 
+}
+.approve-panel .buttons button{
+  min-width: 180rpx;
+  margin: 10rpx;
+  padding: 0 20rpx;
+}
+
+.form-line{
+  margin:0.22rem 0px;
+}
+
+.form-row{
+  height: 66rpx;
+}

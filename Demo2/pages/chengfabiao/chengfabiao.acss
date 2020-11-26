@@ -1,0 +1,33 @@
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title text{
+  font-size: larger;
+  font-style: oblique;
+}
+
+.key{
+  border: 1px solid black;
+  width:22px;
+  height: 20px;
+  align-content: center;
+  background-color: darkcyan;
+  text-align: center;
+}
+
+.value{
+  border: 1px solid black;
+  width:22px;
+  height: 20px;
+  align-content: center;
+  text-align: center;
+}

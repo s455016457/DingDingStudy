@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/chengfabiao/chengfabiao",
+    "pages/setting/setting",
+    "pages/MyApprove/MyApprove",
+    "pages/ApproveUser/ApproveUser",
+    "pages/CustomComponent/CustomComponent",
+    "pages/CustomComponent/ApproveBox/ApproveHistoryPanel",
+    "pages/UploadFile/UploadFile"
+  ],
+  "window": {
+    "defaultTitle": "深圳市超新四维科技ERP系统"
+  }
+}
